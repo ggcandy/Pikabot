@@ -14,7 +14,7 @@ var serviceAccount = require("insertfirebasekeypathhere");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "insertdatabaseURLhere"
+  databaseURL: "insertfirebaseURLhere"
 });
 
 var db = admin.firestore();
