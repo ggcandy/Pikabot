@@ -10,11 +10,11 @@ global.HTMLParser = require("node-html-parser");
 // i see it this updates as you type.
 var admin = require("firebase-admin");
 
-var serviceAccount = require("./firebase_key.json");
+var serviceAccount = require("insertfirebasekeypathhere");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://pikabot-f6536.firebaseio.com"
+  databaseURL: "insertdatabaseURLhere"
 });
 
 var db = admin.firestore();
